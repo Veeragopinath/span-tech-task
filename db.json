@@ -1,0 +1,165 @@
+{
+  "users": [
+    {
+      "companyName": "Example Company",
+      "logo": "https://via.placeholder.com/150",
+      "email": "user@example.com",
+      "password": "password123",
+      "id": "fefc"
+    },
+    {
+      "id": "70f1",
+      "companyName": "fwedwq",
+      "logoUrl": "ewfew",
+      "email": "mandaleycc@mail.com",
+      "password": "test123ewfwefewe"
+    },
+    {
+      "id": "f961",
+      "companyName": "Inconn Pvt ltd",
+      "logoUrl": "https://inconn.com/wp-content/uploads/2023/09/Inconn-1.svg",
+      "email": "ajithkumar.bs@inconn.com",
+      "password": "9061057706"
+    }
+  ],
+  "employees": [
+    {
+      "name": "John Doe",
+      "dob": "1990-01-01",
+      "address": "123 Street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "experience": [
+        {
+          "from": "2010-01-01",
+          "to": "2012-01-01",
+          "description": "Software Developer"
+        }
+      ],
+      "id": "cf70"
+    },
+    {
+      "id": "34a6",
+      "name": "",
+      "dob": "",
+      "address": "",
+      "city": "",
+      "state": "Tamil Nadu",
+      "experiences": []
+    },
+    {
+      "id": "cedb",
+      "name": "Veeragopinath M",
+      "dob": "",
+      "address": "1/22, S KODIKULAM (Post & Village)",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "experiences": []
+    },
+    {
+      "id": "726a",
+      "name": "Veeragopinath M",
+      "dob": "",
+      "address": "1/22, S KODIKULAM (Post & Village)",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "experiences": [
+        {
+          "title": "vue",
+          "years": "3"
+        }
+      ]
+    },
+    {
+      "id": "0d74",
+      "name": "Veeragopinath M",
+      "dob": "",
+      "address": "1/22, S KODIKULAM (Post & Village)",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "experiences": [
+        {
+          "title": "eee",
+          "years": "3"
+        }
+      ]
+    },
+    {
+      "id": "3cb7",
+      "name": "Veeragopinath M",
+      "dob": "2024-06-04",
+      "address": "1/22, S KODIKULAM (Post & Village)",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "experiences": [
+        {
+          "title": "vue",
+          "years": "3"
+        }
+      ],
+      "company": "Inconn Pvt ltd"
+    },
+    {
+      "id": "a7b4",
+      "name": "Veeragopinath M",
+      "dob": "2024-06-04",
+      "address": "1/22, S KODIKULAM (Post & Village)",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "experiences": [
+        {
+          "title": "vue",
+          "years": "3"
+        }
+      ],
+      "company": "Inconn Pvt ltd"
+    },
+    {
+      "id": "9c08",
+      "name": "Veeragopinath M",
+      "dob": "2024-06-04",
+      "address": "1/22, S KODIKULAM (Post & Village)",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "experiences": [
+        {
+          "title": "vue",
+          "years": "3"
+        }
+      ],
+      "company": "Inconn Pvt ltd"
+    },
+    {
+      "id": "7983",
+      "name": "Veeragopinath M",
+      "dob": "2024-06-04",
+      "address": "1/22, S KODIKULAM (Post & Village)",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "experiences": [
+        {
+          "title": "vue",
+          "years": "3"
+        }
+      ],
+      "company": "Inconn Pvt ltd"
+    },
+    {
+      "id": "455e",
+      "dob": "2024-06-05T18:30:00.000Z",
+      "address": "sathirakudi",
+      "city": "Tiruchirappalli",
+      "name": "Veeragopinath M"
+    },
+    {
+      "id": "d7fb",
+      "dob": "2024-06-14T18:30:00.000Z",
+      "address": "sathirakudi",
+      "city": "Tiruchirappalli",
+      "name": "Veeragopinath M"
+    },
+    {
+      "id": "c68e"
+    }
+  ]
+}

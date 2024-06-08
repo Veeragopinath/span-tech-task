@@ -20,6 +20,13 @@
       "logoUrl": "https://inconn.com/wp-content/uploads/2023/09/Inconn-1.svg",
       "email": "ajithkumar.bs@inconn.com",
       "password": "9061057706"
+    },
+    {
+      "id": "ddbc",
+      "companyName": "",
+      "logoUrl": "",
+      "email": "",
+      "password": ""
     }
   ],
   "employees": [
@@ -296,7 +303,7 @@
       ]
     },
     {
-      "id": "c34c",
+      "id": "9a54",
       "name": "Veeragopinath M",
       "dob": "",
       "address": "sathirakudi",
@@ -306,14 +313,14 @@
         {
           "companyName": "wfqww",
           "from": "",
-          "to": null,
+          "to": "",
           "position": ""
         }
       ],
       "company": ""
     },
     {
-      "id": "ccbc",
+      "id": "20d5",
       "name": "Veeragopinath M",
       "dob": "",
       "address": "sathirakudi",
@@ -321,13 +328,23 @@
       "state": "Tamil Nadu",
       "experiences": [
         {
-          "companyName": "wfqww",
-          "from": "",
-          "to": null,
-          "position": ""
+          "companyName": "wynwy",
+          "from": "2024-01-28",
+          "to": "2024-06-21",
+          "position": "Quality Analyst"
         }
       ],
       "company": ""
+    },
+    {
+      "id": "f738",
+      "name": "",
+      "dob": "",
+      "address": "",
+      "city": "",
+      "state": "Tamil Nadu",
+      "experiences": [],
+      "company": "Inconn Pvt ltd"
     }
   ]
 }

@@ -6,23 +6,21 @@
       </v-card-title>
       <v-card-text>
         <v-form ref="form" @submit.prevent="handleSubmit">
-          <!-- Use 'v-model.trim' to automatically trim whitespace -->
-          <v-text-field v-model.trim="employee.name" label="Name" :rules="nameRules" required prepend-icon="mdi-map-marker"></v-text-field>
 
-          <v-date-input
+          <v-text-field  variant="outlined"
+              v-model.trim="employee.name" label="Name" :rules="nameRules" required prepend-icon="mdi-map-marker"></v-text-field>
+
+          <v-date-input  variant="outlined"
               v-model="employee.dob"
               label="Date of birth"
               required
           ></v-date-input>
-          <v-text-field v-model.trim="employee.address" label="Address" required prepend-icon="mdi-map-marker"></v-text-field>
-          <v-select v-model="employee.city" :items="cities" label="City" required prepend-icon="mdi-map-marker"></v-select>
-          <!-- Removed 'value' attribute as 'v-model' is already binding the value -->
-          <v-text-field v-model="employee.state" label="State" disabled required prepend-icon="mdi-map-marker"></v-text-field>
+          <v-text-field   variant="outlined" v-model.trim="employee.address" label="Address" required prepend-icon="mdi-map-marker"></v-text-field>
+          <v-select   variant="outlined" v-model="employee.city" :items="cities" label="City" required prepend-icon="mdi-map-marker"></v-select>
+
+          <v-text-field  variant="outlined" v-model="employee.state" label="State" disabled required prepend-icon="mdi-map-marker"></v-text-field>
           <v-btn type="button" @click="addExperience">Add Experience</v-btn>
-          <div v-for="(exp, index) in employee.experiences" :key="index" class="mt-3">
-            <v-text-field v-model.trim="exp.title" label="Experience Title" required></v-text-field>
-            <v-text-field v-model.number="exp.years" label="Years" type="number" required></v-text-field>
-          </div>
+          <experience-card >  </experience-card>
           <v-btn type="submit">Add</v-btn>
         </v-form>
       </v-card-text>
@@ -52,7 +50,7 @@ let employee = reactive({
   experiences: [],
   company:''
 })
-
+const position = reactive(['Quality Analyst','Developer', 'Business Analyst'])
 const authStore = useAuthStore()
 const cities = ['Chennai', 'Coimbatore', 'Madurai', 'Tiruchirappalli', 'Salem', 'Tirunelveli', 'Vellore', 'Erode', 'Thoothukudi', 'Dindigul']
 
@@ -78,9 +76,8 @@ onMounted(() => {
   }
 })
 
-const addExperience = () => {
-  employee.experiences.push({ title: '', years: '' })
-}
+
+
 
 const handleSubmit = () => {
   if (form.value.validate()) {

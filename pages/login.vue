@@ -1,52 +1,58 @@
 <template>
-  <v-container class="d-flex justify-center align-center"
-               style="height:100vh ">
+  <v-app>
+    <v-card
+        class="ma-auto rounded-xl pa-6"
+        color="#F2F2F2"
+        max-width="auto"
+        elevation="0"
+    >
+      <v-card-title><v-row class="d-flex justify-center mb-2"> SPAN TECHNOLOGY - TASK</v-row></v-card-title>
+      <v-divider></v-divider>
 
-    <v-card class="mx-auto pa-12 " elevation="8" rounded="lg">
-      <v-form @submit.prevent="handleLogin">
-        <div class="text-subtitle-1 text-medium-emphasis">User Login</div>
-        <v-text-field
-            density="compact"
-            placeholder="Email address"
-            prepend-inner-icon="mdi-email-outline"
-            variant="outlined"
-            v-model="email" label="Email" :rules="emailRules" required
-        ></v-text-field>
 
-        <div
-            class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between"
-        >
-          Password
-        </div>
+        <v-form ref="form" @submit.prevent="handleLogin">
+          <v-card-text>
+          <v-text-field
+              density="compact"
+              variant="outlined"
+              prepend-inner-icon="mdi-email-outline"
+              label="Username"
+              type="text"
+              v-model="email"
+              :rules="emailRules"
+              required
+          ></v-text-field>
+          <v-text-field
+              density="compact"
+              variant="outlined"
+              prepend-inner-icon="mdi-lock-outline"
+              hide-details
+              label="phone Number"
+              type="password"
+              v-model="password"
+              :rules="passwordRules"
+              required
+          ></v-text-field>
+           </v-card-text>
+          <v-divider></v-divider>
+           <v-card-actions class="d-flex justify-center">
 
-        <v-text-field
-            :append-inner-icon="visible ? 'mdi-eye-off' : 'mdi-eye'"
-            :type="visible ? 'text' : 'password'"
-            density="compact"
-            placeholder="Enter your password"
-            prepend-inner-icon="mdi-lock-outline"
-            variant="outlined"
-            @click:append-inner="visible = !visible"
-            v-model="password" label="Password" type="password" :rules="passwordRules" required
-        ></v-text-field>
+            <v-btn text color="primary" type="submit"> Login </v-btn>
 
-        <v-btn color="blue" size="large" variant="tonal" block type="submit">
-          Log In
-        </v-btn>
+            <v-btn text color="primary" @click="navigateToRegister">
+              Sign up now
+              <v-icon right>mdi-chevron-right</v-icon>
+            </v-btn>
 
-        <v-card-text class="text-center">
-          <a
-              class="text-blue text-decoration-none"
-              @click="navigateToRegister"
-          >
-            Sign up now
-            <v-icon icon="mdi-chevron-right"></v-icon>
-          </a>
-        </v-card-text>
-      </v-form>
+          </v-card-actions>
+        </v-form>
+
+
     </v-card>
-  </v-container>
+  </v-app>
+
 </template>
+
 
 <script setup>
 import { ref } from 'vue'

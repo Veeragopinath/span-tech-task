@@ -18,7 +18,7 @@
         <v-row>
           <v-data-table :headers="headers" :items="employees"  item-value="id">
             <template #no-data>
-              <v-alert :value="true" type="info" class="mt-4">
+              <v-alert :value="true"  class="mt-4 bg-white">
                 No data available
               </v-alert>
             </template>

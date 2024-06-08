@@ -7,7 +7,7 @@
         {{ formMode === 'ADD' ? 'Add Employee' : 'Edit Employee' }}
       </v-card-title>
       <v-card-text>
-        <v-form ref="form" @submit.prevent="handleSubmit">
+        <v-form ref="form" v-model="valid" @submit.prevent="handleSubmit">
           <v-text-field variant="outlined" v-model="employee.name" label="Name" :rules="validationRules.name"
                         ></v-text-field>
           <v-text-field variant="outlined" v-model="employee.dob" label="DOB" type="date" :rules="validationRules.dob" ></v-text-field>
@@ -96,11 +96,18 @@ const resetEmployee = () => {
   employee.experiences = [];
 };
 
+
+
 const addExperience = () => {
-  employee.experiences.push({companyName: '', from: '', to: '', position: ''});
+
+  const newExperiences = [...employee.experiences];
+  newExperiences.push({ companyName: '', from: '', to: '', position: '' });
+  employee.experiences = newExperiences;
 };
 
+
 const handleSubmit = () => {
+  debugger
   if (valid.value) {
     employee.company = authStore.companyName;
     emits('add-employee', {...employee});

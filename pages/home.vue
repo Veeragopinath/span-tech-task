@@ -76,7 +76,7 @@ const showAddEmployeeDialog = ref(false)
 
 const formMode = ref('ADD')
 const selectedEmployeeDetail = reactive({})
-
+const selectedEmployeeId = ref();
 const headers = [
   { title: 'Name', key: 'name' },
   { title: 'DOB', key: 'dob' },
@@ -94,8 +94,10 @@ onMounted(async () => {
 const employees = computed(() => employeeStore.employees.filter((emp) => emp.company === authStore.companyName))
 
 const openAddEmployeeDialog = (mode, employee = null) => {
+  debugger
   formMode.value = mode
   if (mode === 'EDIT' && employee) {
+    selectedEmployeeId.value= employee.id;
     Object.assign(selectedEmployeeDetail, employee)
   } else {
     resetSelectedEmployeeDetail()
@@ -115,10 +117,11 @@ const resetSelectedEmployeeDetail = () => {
 }
 
 const addEmployee = (employee) => {
+  debugger
   if (formMode.value === 'ADD') {
     employeeStore.addEmployee(employee)
   } else {
-    employeeStore.updateEmployee(employee)
+    employeeStore.updateEmployee(employee,selectedEmployeeId.value)
   }
   showAddEmployeeDialog.value = false
 }
@@ -127,9 +130,7 @@ const deleteEmployee = (employee) => {
   employeeStore.removeEmployee(employee.id)
 }
 
-const searchEmployees = (criteria) => {
-  employeeStore.searchEmployees(criteria)
-}
+
 
 const logout = () => {
   if (confirm('Are you sure you want to log out?')) {

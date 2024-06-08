@@ -12,6 +12,7 @@ export const useEmployeeStore = defineStore('employee', {
       this.employees = response.data
     },
     addEmployee(employee) {
+      debugger
       this.employees.push(employee)
       axios.post('/employees', employee)
     },
@@ -20,8 +21,8 @@ export const useEmployeeStore = defineStore('employee', {
      await axios.delete(`/employees/${employeeId}`)
      await this.fetchEmployees()
     },
-    async updateEmployee(employeeId) {
-      await axios.put(`/employees/${employeeId}`)
+    async updateEmployee(employee,id) {
+      await axios.put(`/employees/${id}`,employee)
       await this.fetchEmployees()
     },
     searchEmployees(criteria) {

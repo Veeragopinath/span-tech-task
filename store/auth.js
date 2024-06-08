@@ -10,7 +10,7 @@ export const useAuthStore = defineStore('auth', {
   }),
   actions: {
     async login(credentials) {
-      debugger
+      
       const users = await axios.get('/users')
       const user = users.data.find(user => user.email === credentials.email)
       if (!user) throw new Error('Email is not registered')

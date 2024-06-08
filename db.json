@@ -1,350 +1,37 @@
 {
   "users": [
     {
-      "companyName": "Example Company",
-      "logo": "https://via.placeholder.com/150",
-      "email": "user@example.com",
-      "password": "password123",
-      "id": "fefc"
-    },
-    {
-      "id": "70f1",
-      "companyName": "fwedwq",
-      "logoUrl": "ewfew",
-      "email": "mandaleycc@mail.com",
-      "password": "test123ewfwefewe"
-    },
-    {
-      "id": "f961",
-      "companyName": "Inconn Pvt ltd",
+      "id": "64fe",
+      "companyName": "Inconn Private limited",
       "logoUrl": "https://inconn.com/wp-content/uploads/2023/09/Inconn-1.svg",
-      "email": "ajithkumar.bs@inconn.com",
-      "password": "9061057706"
+      "email": "Veeragopinath@inconn.com",
+      "password": "Asdfghjkl@1"
     },
     {
-      "id": "ddbc",
-      "companyName": "",
-      "logoUrl": "",
-      "email": "",
-      "password": ""
+      "id": "e030",
+      "companyName": "Inconn Private Limited",
+      "logoUrl": "https://inconn.com/wp-content/uploads/2023/09/Inconn-1.svg",
+      "email": "Veeragopinath.m@inconn.com",
+      "password": "Asdfghj@123"
     }
   ],
   "employees": [
     {
-      "name": "John Doe",
-      "dob": "1990-01-01",
-      "address": "123 Street",
-      "city": "Chennai",
-      "state": "Tamil Nadu",
-      "experience": [
-        {
-          "from": "2010-01-01",
-          "to": "2012-01-01",
-          "description": "Software Developer"
-        }
-      ],
-      "id": "cf70"
-    },
-    {
-      "id": "34a6",
-      "name": "",
-      "dob": "",
-      "address": "",
-      "city": "",
-      "state": "Tamil Nadu",
-      "experiences": []
-    },
-    {
-      "id": "cedb",
+      "id": "d7b1",
       "name": "Veeragopinath M",
-      "dob": "",
+      "dob": "2024-06-13",
       "address": "1/22, S KODIKULAM (Post & Village)",
       "city": "Coimbatore",
       "state": "Tamil Nadu",
-      "experiences": []
-    },
-    {
-      "id": "726a",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "1/22, S KODIKULAM (Post & Village)",
-      "city": "Madurai",
-      "state": "Tamil Nadu",
       "experiences": [
         {
-          "title": "vue",
-          "years": "3"
-        }
-      ]
-    },
-    {
-      "id": "0d74",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "1/22, S KODIKULAM (Post & Village)",
-      "city": "Madurai",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "eee",
-          "years": "3"
-        }
-      ]
-    },
-    {
-      "id": "455e",
-      "dob": "2024-06-05T18:30:00.000Z",
-      "address": "sathirakudi",
-      "city": "Tiruchirappalli",
-      "name": "Veeragopinath M"
-    },
-    {
-      "id": "d7fb",
-      "dob": "2024-06-14T18:30:00.000Z",
-      "address": "sathirakudi",
-      "city": "Tiruchirappalli",
-      "name": "Veeragopinath M"
-    },
-    {
-      "id": "c68e"
-    },
-    {
-      "id": "d227",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "vue",
-          "years": 3
-        }
-      ]
-    },
-    {
-      "id": "6e63",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "vue",
-          "years": 3
-        }
-      ]
-    },
-    {
-      "id": "5ce8",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "3edd",
-          "years": 3
-        }
-      ]
-    },
-    {
-      "id": "0e2d",
-      "name": "hbifewkfje",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": []
-    },
-    {
-      "id": "a24f",
-      "name": "",
-      "dob": "",
-      "address": "",
-      "city": "",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "",
-          "years": ""
-        },
-        {
-          "title": "",
-          "years": ""
-        },
-        {
-          "title": "",
-          "years": ""
-        }
-      ]
-    },
-    {
-      "id": "1632",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": []
-    },
-    {
-      "id": "a99c",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "20a2",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "08fe",
-      "name": "hfoiwqlfinwqf",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "0977",
-      "name": "hfoiwqlfinwqf",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "9b33",
-      "name": "hfoiwqlfinwqf",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "0f6f",
-      "name": "hfoiwqlfinwqf",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "5554",
-      "name": "hfoiwqlfinwqf",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "68f0",
-      "name": "hfoiwqlfinwqf",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "title": "njn",
-          "years": 32
-        }
-      ]
-    },
-    {
-      "id": "9a54",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "companyName": "wfqww",
-          "from": "",
-          "to": "",
-          "position": ""
+          "companyName": "VGRK Constructions",
+          "from": "2024-06-20",
+          "to": "2024-06-13",
+          "position": "Developer"
         }
       ],
-      "company": ""
-    },
-    {
-      "id": "20d5",
-      "name": "Veeragopinath M",
-      "dob": "",
-      "address": "sathirakudi",
-      "city": "Salem",
-      "state": "Tamil Nadu",
-      "experiences": [
-        {
-          "companyName": "wynwy",
-          "from": "2024-01-28",
-          "to": "2024-06-21",
-          "position": "Quality Analyst"
-        }
-      ],
-      "company": ""
-    },
-    {
-      "id": "f738",
-      "name": "",
-      "dob": "",
-      "address": "",
-      "city": "",
-      "state": "Tamil Nadu",
-      "experiences": [],
-      "company": "Inconn Pvt ltd"
+      "company": "Inconn Private Limited"
     }
   ]
 }

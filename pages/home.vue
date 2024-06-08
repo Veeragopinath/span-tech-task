@@ -1,3 +1,5 @@
+<!--components/home.vue-->
+
 <template>
      <div>
        <v-app-bar app>

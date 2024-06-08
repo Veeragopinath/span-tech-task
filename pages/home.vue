@@ -1,38 +1,49 @@
 <template>
-      <v-app-bar app>
-        <v-img :src="authStore.logoUrl" alt="Company Logo" class="mr-4" width="50"></v-img>
-        <v-app-bar-title> {{authStore.companyName}}</v-app-bar-title>
-        <v-spacer></v-spacer>
-        <v-btn icon @click="logout">
-          <v-icon>mdi-logout</v-icon>
-          logout
-        </v-btn>
-      </v-app-bar>
-    <v-container style="background-color: black" class="mt-10">
+     <div>
+       <v-app-bar app>
+         <v-img :src="authStore.logoUrl" alt="Company Logo"  class="ml-5"  max-width="150"></v-img>
+         <v-app-bar-title> {{authStore.companyName}}</v-app-bar-title>
+         <v-spacer></v-spacer>
+         <v-btn icon @click="logout">
+           <v-icon>mdi-logout</v-icon>
+         </v-btn>
+       </v-app-bar>
+      <v-main class="mx-3">
+        <v-container fluid  >
+        <v-row dense class="my-6">
+          <v-spacer></v-spacer>
+          <v-btn @click="openAddEmployeeDialog">Add Employee</v-btn>
+          <v-btn @click="openSearchDialog">Search</v-btn>
+        </v-row>
+        <v-row>
+          <v-data-table :headers="headers" :items="employees"  item-value="id">
+            <template #no-data>
+              <v-alert :value="true" type="info" class="mt-4">
+                No data available
+              </v-alert>
+            </template>
+            <template #item.actions="{ item }">
+              <v-icon class="me-2" size="small" @click="editEmployee(item)">
+                mdi-pencil
+              </v-icon>
+              <v-icon size="small" @click="deleteEmployee(item)"> mdi-delete </v-icon>
+            </template>
+            <template #item.experience="{ item }">
+              <v-row v-for="exp in item.experiences" :key="exp.title"> {{exp.title}} - {{exp.years}} years</v-row>
+            </template>
+          </v-data-table>
+        </v-row>
 
-    <v-btn @click="openAddEmployeeDialog">Add Employee</v-btn>
-    <v-btn @click="openSearchDialog">Search</v-btn>
 
-    <v-data-table :headers="headers" :items="employees"  item-value="id">
-      <template v-slot:no-data>
-        <v-alert :value="true" type="info" class="mt-4">
-          No data available
-        </v-alert>
-      </template>
-      <template v-slot:item.actions="{ item }">
-        <v-icon class="me-2" size="small" @click="editEmployee(item)">
-          mdi-pencil
-        </v-icon>
-        <v-icon size="small" @click="deleteEmployee(item)"> mdi-delete </v-icon>
-      </template>
-    </v-data-table>
 
-    <!-- Add Employee Dialog -->
-    <AddEmployeeDialog v-model="showAddEmployeeDialog" @add-employee="addEmployee" :form-mode="formMode" :employee-details="SelectedEmployeeDetail"/>
 
-    <!-- Search Dialog -->
-    <SearchDialog v-model="showSearchDialog" @search="searchEmployees" />
-  </v-container>
+        <!-- Add Employee Dialog -->
+        <AddEmployeeDialog v-model="showAddEmployeeDialog" @add-employee="addEmployee" :form-mode="formMode" :employee-details="SelectedEmployeeDetail"/>
+
+        <!-- Search Dialog -->
+        <SearchDialog v-model="showSearchDialog" @search="searchEmployees" />
+      </v-container></v-main>
+     </div>
 </template>
 
 <script setup>
@@ -82,7 +93,8 @@ const addEmployee = (employee) => {
   employeeStore.addEmployee(employee)
 }
 const editEmployee= (employee)=> {
-  formMode = 'EDIT'
+  debugger
+  formMode.value = 'EDIT'
   SelectedEmployeeDetail = employee;
   openAddEmployeeDialog()
 

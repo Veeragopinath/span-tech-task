@@ -1,4 +1,5 @@
 # Span Technologies task
+
 ## Initial Setup
 
 use node version v16.15.1 above
@@ -7,16 +8,19 @@ use node version v16.15.1 above
 
 $ npm install
 
-!important --
-for runing client server and json server , use two different terminals
+### Important: Use two different terminals for running the client server and the JSON server.
 
-# For running client - dev server ,which will be lisening on port localhost:3000
+# Running the Development Server
+
+To start the client development server, which listens on localhost:3000, run:
 
 $ npm run dev
 
-# for running json server , which will be lisening on port localhost:3001
+# Running the JSON Server
 
-$ npm run db:serve
+To start the JSON server, which listens on localhost:3001, run:
+
+$ npm run json-server
 
 # build for production and launch server
 
@@ -35,9 +39,6 @@ The assets directory contains your uncompiled assets such as Stylus or Sass file
 
 The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
 
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
 ### `pages`
 
@@ -47,11 +48,6 @@ This directory contains your application views and routes. Nuxt will read all th
 
 The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
 
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
 ### `db.json`
 

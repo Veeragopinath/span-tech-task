@@ -18,7 +18,6 @@ export const useAuthStore = defineStore('auth', {
       this.user = user
       this.logoUrl = user.logoUrl
       this.companyName = user.companyName
-      localStorage.setItem('userToken', JSON.stringify(user));
     },
     async register(details) {
       
@@ -33,6 +32,7 @@ export const useAuthStore = defineStore('auth', {
       this.user = null
       this.logoUrl = ''
       this.companyName = ''
+      
     }
   }
 })

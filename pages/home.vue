@@ -1,4 +1,4 @@
-<!-- components/home.vue -->
+
 <template>
   <div>
     <v-app-bar app>
@@ -53,7 +53,7 @@
           </v-data-table>
         </v-row>
 
-        <!-- Add Employee Dialog -->
+        
         <AddEmployeeDialog v-model="showAddEmployeeDialog" @add-employee="addEmployee" :form-mode="formMode" :employee-details="selectedEmployeeDetail" />
 
 

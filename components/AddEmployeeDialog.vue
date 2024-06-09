@@ -78,7 +78,7 @@ const cities = [
   'Dindigul'];
 
 
-// Watch for changes in the props and update the local reactive employee object
+
 watch(
     () => props.employeeDetails,
     (newDetails) => {

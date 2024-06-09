@@ -77,7 +77,7 @@ const showAddEmployeeDialog = ref(false)
 
 const formMode = ref('ADD')
 const selectedEmployeeDetail = reactive({})
-const selectedEmployeeId = ref("") // Ensure selectedEmployeeId is initialized correctly
+const selectedEmployeeId = ref("")
 const headers = [
   { title: 'Name', key: 'name' },
   { title: 'DOB', key: 'dob' },
@@ -98,7 +98,7 @@ const openAddEmployeeDialog = (mode, employee = null) => {
   debugger
   formMode.value = mode
   if (mode === 'EDIT' && employee) {
-    selectedEmployeeId.value = employee.id // Correctly set the selectedEmployeeId
+    selectedEmployeeId.value = employee.id 
     Object.assign(selectedEmployeeDetail, employee)
   } else {
     resetSelectedEmployeeDetail()

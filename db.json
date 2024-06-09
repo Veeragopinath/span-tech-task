@@ -13,6 +13,13 @@
       "logoUrl": "https://inconn.com/wp-content/uploads/2023/09/Inconn-1.svg",
       "email": "Veeragopinath.m@inconn.com",
       "password": "Asdfghj@123"
+    },
+    {
+      "id": "0bd9",
+      "companyName": "g8ugojho",
+      "logoUrl": "oi[iojojkj",
+      "email": "ajithkumar.bs@inconn.com",
+      "password": "9061057706"
     }
   ],
   "employees": [
@@ -32,6 +39,29 @@
         }
       ],
       "company": "Inconn Private Limited"
+    },
+    {
+      "name": "Veeragopinath M",
+      "dob": "2024-06-11",
+      "address": "uuuuuuuuuuuuuuuuuuuu",
+      "city": "Salem",
+      "state": "Tamil Nadu",
+      "experiences": [
+        {
+          "companyName": "VGRK Constructions",
+          "from": "2024-06-05",
+          "to": "2024-06-14",
+          "position": "Quality Analyst"
+        },
+        {
+          "companyName": "VGRK Constructions",
+          "from": "2024-06-11",
+          "to": "2024-06-21",
+          "position": "Developer"
+        }
+      ],
+      "company": "g8ugojho",
+      "id": "7459"
     }
   ]
 }

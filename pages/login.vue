@@ -69,7 +69,7 @@ const handleLogin = async () => {
     }
 
   } catch (error) {
-    alert(error.message) // Simplified error handling, can be improved
+    alert(error.message) 
   }
 }
 
@@ -79,5 +79,5 @@ const navigateToRegister = () => {
 </script>
 
 <style scoped>
-/* Add styles here */
+
 </style>

@@ -9,5 +9,5 @@
 </script>
 
 <style scoped>
-/* Optional global styles can be added here */
+
 </style>

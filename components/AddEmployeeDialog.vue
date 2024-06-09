@@ -107,7 +107,7 @@ const addExperience = () => {
 
 
 const handleSubmit = () => {
-  debugger
+  
   if (valid.value) {
     employee.company = authStore.companyName;
     emits('add-employee', {...employee});

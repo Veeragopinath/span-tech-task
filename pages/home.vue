@@ -95,11 +95,11 @@ onMounted(async () => {
 const employees = computed(() => employeeStore.employees.filter((emp) => emp.company === authStore.companyName))
 
 const openAddEmployeeDialog = (mode, employee = null) => {
-  debugger
+  
   formMode.value = mode
   if (mode === 'EDIT' && employee) {
     selectedEmployeeId.value = employee.id 
-    Object.assign(selectedEmployeeDetail, employee)
+    Object.assign(selectedEmployeeDetail, JSON.parse(JSON.stringify(employee)));
   } else {
     resetSelectedEmployeeDetail()
   }
@@ -121,7 +121,7 @@ const addEmployee = (employee) => {
   if (formMode.value === 'ADD') {
     employeeStore.addEmployee(employee)
   } else {
-    debugger
+    
     employeeStore.updateEmployee(employee, selectedEmployeeId.value)
   }
   showAddEmployeeDialog.value = false

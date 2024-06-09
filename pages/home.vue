@@ -12,8 +12,9 @@
     <v-main class="mx-3">
       <v-container fluid>
         <v-row dense class="my-6">
-          <v-icon icon="mdi-video-input-component"></v-icon> &nbsp; Employees data
-          List
+          <v-icon class="mt-1" icon="mdi-account-group"></v-icon>  
+          <v-col class="ml-4 text-h6 font-weight-bold">Employees data
+            List</v-col>
           <v-spacer></v-spacer>
 
           <v-text-field
@@ -71,12 +72,12 @@ import AddEmployeeDialog from '@/components/AddEmployeeDialog.vue'
 const router = useRouter()
 const authStore = useAuthStore()
 const employeeStore = useEmployeeStore()
-const search = ref('');
+const search = ref('')
 const showAddEmployeeDialog = ref(false)
 
 const formMode = ref('ADD')
 const selectedEmployeeDetail = reactive({})
-const selectedEmployeeId = ref();
+const selectedEmployeeId = ref("") // Ensure selectedEmployeeId is initialized correctly
 const headers = [
   { title: 'Name', key: 'name' },
   { title: 'DOB', key: 'dob' },
@@ -97,7 +98,7 @@ const openAddEmployeeDialog = (mode, employee = null) => {
   debugger
   formMode.value = mode
   if (mode === 'EDIT' && employee) {
-    selectedEmployeeId.value= employee.id;
+    selectedEmployeeId.value = employee.id // Correctly set the selectedEmployeeId
     Object.assign(selectedEmployeeDetail, employee)
   } else {
     resetSelectedEmployeeDetail()
@@ -117,11 +118,11 @@ const resetSelectedEmployeeDetail = () => {
 }
 
 const addEmployee = (employee) => {
-  debugger
   if (formMode.value === 'ADD') {
     employeeStore.addEmployee(employee)
   } else {
-    employeeStore.updateEmployee(employee,selectedEmployeeId.value)
+    debugger
+    employeeStore.updateEmployee(employee, selectedEmployeeId.value)
   }
   showAddEmployeeDialog.value = false
 }
@@ -130,8 +131,6 @@ const deleteEmployee = (employee) => {
   employeeStore.removeEmployee(employee.id)
 }
 
-
-
 const logout = () => {
   if (confirm('Are you sure you want to log out?')) {
     authStore.logout()
@@ -139,6 +138,7 @@ const logout = () => {
   }
 }
 </script>
+
 
 <style scoped>
 v-btn {

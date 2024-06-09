@@ -1,4 +1,3 @@
-// store/employee.ts
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
@@ -11,24 +10,17 @@ export const useEmployeeStore = defineStore('employee', {
       const response = await axios.get('/employees')
       this.employees = response.data
     },
-    addEmployee(employee) {
-      debugger
-      this.employees.push(employee)
-      axios.post('/employees', employee)
-    },
-   async removeEmployee(employeeId) {
-      debugger
-     await axios.delete(`/employees/${employeeId}`)
-     await this.fetchEmployees()
-    },
-    async updateEmployee(employee,id) {
-      await axios.put(`/employees/${id}`,employee)
+    async addEmployee(employee) {
+      await axios.post('/employees', employee)
       await this.fetchEmployees()
     },
-    searchEmployees(criteria) {
-      this.fetchEmployees().then(() => {
-        this.employees = this.employees.filter(employee => employee[criteria.by].includes(criteria.term))
-      })
+    async removeEmployee(employeeId) {
+      await axios.delete(`/employees/${employeeId}`)
+      await this.fetchEmployees()
+    },
+    async updateEmployee(employee, id) {
+      await axios.put(`/employees/${id}`, employee)
+      await this.fetchEmployees()
     }
   }
 })

@@ -3,7 +3,6 @@
   <v-dialog v-model="modelValue" max-width="600px">
     <v-card>
       <v-card-title>
-        {{ employee.dob }}
         {{ formMode === 'ADD' ? 'Add Employee' : 'Edit Employee' }}
       </v-card-title>
       <v-card-text>

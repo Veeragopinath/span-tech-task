@@ -14,14 +14,14 @@
       <v-card-text>
 
         <v-row >
-          <v-col cols="6"><v-text-field variant="outlined" v-model="exp.companyName" label="Company Name" required></v-text-field></v-col>
-          <v-col cols="6"> <v-select variant="outlined" v-model="exp.position" :items="positions" label="Position" required></v-select></v-col>
+          <v-col cols="6"><v-text-field variant="outlined" v-model="exp.companyName" label="Company Name" :rules="validationRules.companyName"></v-text-field></v-col>
+          <v-col cols="6"> <v-select variant="outlined" v-model="exp.position" :items="positions" label="Position" :rules="validationRules.position"></v-select></v-col>
 
 
         </v-row>
         <v-row>
-          <v-col cols="6"> <v-text-field type="date" variant="outlined" v-model="exp.from" label="From Date" required></v-text-field></v-col>
-          <v-col cols="6"> <v-text-field type="date" variant="outlined" v-model="exp.to" label="To Date" required></v-text-field> </v-col>
+          <v-col cols="6"> <v-text-field type="date" variant="outlined" v-model="exp.from" label="From Date" :rules="validationRules.employement_start_date"></v-text-field></v-col>
+          <v-col cols="6"> <v-text-field type="date" variant="outlined" v-model="exp.to" label="To Date" :rules="validationRules.employement_end_date"></v-text-field> </v-col>
 
 
         </v-row>
@@ -32,7 +32,7 @@
 
 <script setup>
 import { defineProps, defineEmits, computed } from 'vue'
-
+import { validationRules } from '@/helpers/formValidation.js';
 const props = defineProps({
   experiences: {
     type: Array,
